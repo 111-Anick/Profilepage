@@ -19,9 +19,13 @@ body{
     background-position: center;
     background-size: cover;
 }
-body h2{
+body h1{
   font-size: x-large;
   color:rgba(68, 68, 68, 0.829);
+}
+body h2{
+  color:gray;
+  font-size: x-large;
 }
 
 body h5{
@@ -29,7 +33,9 @@ body h5{
     color:white;
     font-size: small;
 }
-
+ p{
+  color:rgb(105, 101, 101);
+}
 .fa {
   padding: 20px;
   font-size: 30px;
