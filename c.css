@@ -5,7 +5,8 @@
 
 }
 .card{
-    padding: 15px;
+    
+    
  
    background-image: url(https://images.unsplash.com/photo-1590272456521-1bbe160a18ce?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=matt-gross-RO3-oMM3s8A-unsplash.jpg);
     color:gray;
@@ -13,19 +14,22 @@
 
 }
 body{
-    background-image: url(https://images.unsplash.com/photo-1616004675303-ae5657c14af7?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=quinton-coetzee-u-n1AFjUclo-unsplash.jpg);
+  align-items: center;
+    background-image: "b.jpg";
     background-position: center;
     background-size: cover;
 }
+body h2{
+  font-size: x-large;
+  color:rgba(68, 68, 68, 0.829);
+}
 
 body h5{
-    padding-top: 150px;
+    padding-top: 40px;
     color:white;
     font-size: small;
 }
-.card body{
-  padding-bottom: 500px;
-}
+
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -52,6 +56,57 @@ body h5{
 }
 
 
+
+.numbers {
+  font-size: 50px;
+  line-height: 1em;
+  text-align: center;
+  margin: 40px auto;
+  overflow: hidden;
+}
+.numbers__window {
+  display: inline-block;
+  overflow: hidden;
+  width: 0.5em;
+  height: 1em;
+}
+.numbers__window__digit {
+  font: inherit;
+  word-break: break-all;
+  display: block;
+  width: 0;
+  padding: 0 0.52em 0 0;
+  margin: 0 auto;
+  overflow: inherit;
+  animation: counting 0.4s steps(10) forwards infinite;
+}
+.numbers__window__digit::before {
+  content: attr(data-fake);
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+.numbers__window__digit--1 {
+  animation-iteration-count: 3;
+}
+.numbers__window__digit--2 {
+  animation-iteration-count: 6;
+}
+.numbers__window__digit--3 {
+  animation-iteration-count: 9;
+}
+.numbers__window__digit--4 {
+  animation-iteration-count: 12;
+}
+.numbers__window__digit--5 {
+  animation-iteration-count: 15;
+}
+
+@keyframes counting {
+  100% {
+    transform: translate3d(0, -10em, 0);
+  }
+}
 
 @include media-breakpoint-up(sm) { ... }
 @include media-breakpoint-up(md) { ... }
